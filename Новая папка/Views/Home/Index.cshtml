@@ -1,0 +1,72 @@
+﻿@page
+@model Index
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@(ViewData["Title"]?.ToString() ?? "Default Title")</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="~/css/site.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><i class='bx bxs-basket'></i>Корзина</a>
+        <div class="mini-cart">
+            <h2>Корзина</h2>
+            <div class="cart-items"></div>
+            <button class="close-cart">Закрыть</button>
+        </div>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home" class="home-active">Главный экран</a></li>
+            <li><a href="#categories" class="home-passive">Категории</a></li>
+            <li><a href="#product" class="home-passive">Продукты</a></li>
+            <li><a href="#about" class="home-passive">О нас</a></li>
+        </ul>
+        <div class="profile">
+            <img src="~/image/profile.png" alt="">
+            <span>Big red boot</span>
+            <i class="bx bx-caret-down"></i>
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div class="container">
+            <div class="home-text">
+                <span>RedFoot – шагай стильно, живи ярко!</span>
+                <h1>Ремень Disel</h1>
+                <a href="#btn1" class="btn">Купить<i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+            <a href="#First_shoes">
+                <img src="~/image/IMG_0108.jpg">
+            </a>
+        </div>
+    </section>
+    <section class="Block" id="shoes">
+        <div class="shoe-collection">
+            <div class="shoe-item" id="First_shoes">
+                <img src="~/image/IMG_0108.jpg">
+                <h3>Disel</h3>
+                <p>Ремень</p>
+                <span class="price">$99.99</span>
+                <button id="btn1">Купить</button>
+            </div>
+            <div class="shoe-item" id="Secondly_shoes">
+                <img src="~/image/IMG_0109.jpg">
+                <h3>Convers</h3>
+                <p>Удобная обувь</p>
+                <span class="price">$89.99</span>
+                <button id="btn2">Купить</button>
+            </div>
+            <div class="shoe-item" id="Third_shoes">
+                <img src="~/image/IMG_0110.jpg">
+                <h3>Rick owens</h3>
+                <p>Самая лучшая обувь</p>
+                <span class="price">$140</span>
+                <button id="btn3">Купить</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
